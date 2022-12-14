@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/pattern-background-desktop.svg');
+}
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-image: url('./images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 450px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content{
+    padding-top: 270px;
+}
+.content h1{
+    margin-bottom: 15px;
+}
+.content p{
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+}
+.songContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 30px 40px;
+    border-radius: 10px;
+    text-align: start;
+    position: relative;
+}
+
+.songContainer>a{
+    padding-left: 70px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+}
+
+.songIcon{
+    margin: 15px;
+}
+.songContainer>img{
+    width: 48px;
+    height: 48px;
+}
+#pay{
+    margin: 0 40px;
+    padding: 14px;
+    background-color: #382adf;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#cancel{
+    text-decoration: none;
+    padding: 30px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.songContainer>a:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+#pay:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+#cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:375px) {
+    .container{
+        margin: 50px 30px;
+    }
+    .content{
+        margin: 0 15px;
+    }
+    .content h1 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+    .songContainer{
+        margin: 30px 0;
+        font-size: 0.7em;
+    }
+}
